@@ -59,7 +59,13 @@ transition: .2s ease-in-out;
     display: block;
     margin-top: 3rem;
 }
-
+/* Message */
+.message-container {
+    padding-top: 2rem;
+}
+.message {
+    color: var(--first-color);
+}
 /* Password Generate Here */
 .show-container {
     display: flex;
