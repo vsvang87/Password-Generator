@@ -26,6 +26,7 @@ body {
     background-color: var(--second-color);
     height: 100vh;
     padding: 4rem 0;
+    text-align: center;
 }
 .rp {
     color: var(--first-color);
