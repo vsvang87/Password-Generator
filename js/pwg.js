@@ -7,10 +7,10 @@ const passwordData = [
   "!dhg87/p0>ds*65",
   "#j7$d9%o6>2k*u7",
   "@3l%k6&h4&T8#r4",
-  "$y9&j5$b4@s8!d8",
-  "$sdfa&f9%909asd",
+  "&x7&j5$b4@s8!d8",
+  "%sdfa&f9%909asd",
   "$y9135sdfe&!@d8",
-  "234ls#$%4@s8!d8",
+  "K34ls#$%4@s8!d8",
 ];
 
 generateBtn.addEventListener("click", () => {
