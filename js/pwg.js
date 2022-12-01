@@ -1,20 +1,21 @@
-let generateBtn = document.getElementById("generate-btn");
-let passwordList = document.querySelector(".list");
-let password1 = document.querySelector("#password");
-let password2 = document.querySelector("#password2");
-let password3 = document.querySelector("#password3");
-let password4 = document.querySelector("#password4");
-let message = document.querySelector("#message");
+const password1 = document.getElementById("password1");
+const password2 = document.getElementById("password2");
+const generateBtn = document.getElementById("generate-btn");
 
-//array
-let randomPasswords = ["48b2m2!@#", "2/+3k3$%p50", "564t8w4#$", "9#%$*210!@!"];
+//password character
+const passwordData = [
+  "!dhg87/p0>ds*65",
+  "#j7$d9%o6>2k*u7",
+  "@3l%k6&h4&T8#r4",
+  "$y9&j5$b4@s8!d8",
+  "$sdfa&f9%909asd",
+  "$y9135sdfe&!@d8",
+  "234ls#$%4@s8!d8",
+];
 
 generateBtn.addEventListener("click", () => {
-  for (let i = 0; i < randomPasswords.length; i++) {
-    password1.innerHTML = randomPasswords[0];
-    password2.innerHTML = randomPasswords[1];
-    password3.innerHTML = randomPasswords[2];
-    password4.innerHTML = randomPasswords[3];
-  }
-  message.innerHTML = "Choose a password";
+  let randomPassword1 = Math.floor(Math.random() * passwordData.length);
+  let randomPassword2 = Math.floor(Math.random() * passwordData.length);
+  password1.innerText = passwordData[randomPassword1];
+  password2.innerText = passwordData[randomPassword2];
 });
