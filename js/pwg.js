@@ -77,11 +77,17 @@ const numbersArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 const password1 = document.getElementById("password1");
 const generateBtn = document.getElementById("generate-btn");
+const passwordContainer = document.getElementById("password-container");
 const characterLength = document.getElementById("character-length");
 const lowercaseEl = document.getElementById("lowercase");
 const uppercaseEL = document.getElementById("uppercase");
 const symbolsEL = document.getElementById("symbols");
 const numberEl = document.getElementById("number");
+
+//copy on click
+passwordContainer.addEventListener("click", () => {
+  document.execCommand("Copy");
+});
 
 //storing the random characters
 const randomCharacter = {
